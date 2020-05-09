@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    username: root
+    password: 789456
+    url: jdbc:mysql://localhost:3306/waibi_oms
+    driver-class-name: com.mysql.jdbc.Driver
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+  application:
+    name: waibi-order
+mybatis-plus:
+  mapper-locations: classpath:/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto
+server:
+  port: 9000
